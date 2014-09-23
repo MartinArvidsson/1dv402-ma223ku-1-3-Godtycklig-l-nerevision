@@ -10,20 +10,19 @@ namespace Godtycklig_lönerevison
     {
         static void Main(string[] args)
         {
-            int Salaries;
-            {
-                Console.Write("Ange antal löner att mata in: "); //Frågar om hur många löner som ska bearbetas
-                Salaries = int.Parse(Console.ReadLine()); // Läser in vad användaren skriver och omvandlar till heltal
-                {
-                    int[] SalariesArray = new int[Salaries]; //Skapar en array
-                    {
-                        Console.WriteLine("Ange {0} lönen",SalariesArray.Length);
-                        for (int i = 0; i < SalariesArray.Length; i++)
-                        {
-                        }
-                    }
-                }
-            }
+         int Paychecks;
+         Paychecks = ReadInt("Ange antal löner som ska bearbetas: ");
+        }
+        static void processSalaries(int count)
+        {
+            int[] SalariesArray = new int[];
+        }
+        static int ReadInt(string prompt)
+        {
+            int salaries;
+            Console.Write(prompt);
+            salaries = int.Parse(Console.ReadLine());
+            return salaries;
         }
     }
 }
