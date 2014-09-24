@@ -36,7 +36,7 @@ namespace Godtycklig_lönerevison
                     catch
                     {
                         Console.BackgroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Fel! du har inte angivit ett heltal! Eller så är talet för stort!"); //Felmeddelande om man har bokstäver eller ett tal över 1 miljard.
+                        Console.WriteLine("Fel! du måste mata in tal, bokstäver går inte, talet får inte vara större än 2 miljader."); //Felmeddelande om man har bokstäver eller ett tal över 1 miljard.
                         Console.ResetColor();
                     }
                 }
